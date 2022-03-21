@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider ul{
+    /* position: relative; */
+    width: 100%;
+    height: 200px;
+    list-style: none;
+}
+.slider ul li{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+.arrow{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    color: aliceblue;
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.left{
+    left: 20px;
+}
+.right{
+    right: 20px;
+}
+.iconify{
+    height: 90%;
+    width: 90%;
+}
+.positionLeft{
+    left: -60% !important;
+    transition: 300ms ease-in-out;
+}
+.positionRight{
+    left: 160% !important;
+    transition: 300ms ease-in-out;
+}
+.positionMiddle{
+    left: 50%;
+    transition: 300ms ease-in-out;
+}
+#slide1{
+    background-color: goldenrod;
+    z-index: 4;
+}
+#slide2{
+    background-color: crimson;
+    z-index: 3;
+}
+#slide3{
+    background-color: darkgreen;
+    z-index: 2;
+}
+#slide4{
+    background-color: cornflowerblue;
+    z-index: 1;
+}
